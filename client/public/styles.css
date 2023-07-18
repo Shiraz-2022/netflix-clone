@@ -1,0 +1,1011 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: black;
+
+}
+
+.hidden{
+    display:none;
+}
+
+
+/* .....................................................home page..................................................................... */
+
+
+
+
+
+
+
+
+
+
+
+
+/*............... line between each pages................... */
+
+.line{
+    height:0.5rem;
+    width:100%;
+    background-color:rgb(35,35,35);
+}
+
+
+/*........................ navbar............................ */
+
+.navbar{
+    width:80vw;
+    height:7vw;
+    display:flex;
+    margin :0 auto;
+    align-items: center;
+    position: relative;
+}
+
+.logo_img{
+    width:158px;
+    height:100px;
+    object-fit:cover;
+    margin-right:auto;
+    background: transparent;
+}
+
+.select{
+    width:124.4px;
+    height:32px;
+    text-align: center;
+    background:rgba(22, 22, 22, 0.7);
+    color:white;
+    border:1px solid lightgray;
+    border-radius: 4px;
+    font-size: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select_arrow{
+    width:20px;
+    height:20px;
+    position: absolute;
+    top:7px;
+    right:13px;
+}
+
+.select_container{
+   position: relative;
+   margin-right: 25px;
+}
+
+.www_image{
+    width:16px;
+    height:16px;
+    position: absolute;
+    top:8px;
+    left:8px;
+}
+
+.navbar button{
+    width:76px;
+    height:32px;
+    background-color: #E50914;
+    border-radius:4px;
+    border:none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.navbar button:hover{
+    background-color: #d50027;
+}
+
+
+/* .........................main page...................................... */
+
+.main_page{
+    background: url("images/main_page.jpg");
+    width: 100vw;
+    height:92vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_page::before{
+    content:'';
+    background-color:rgba(0, 0, 0, 0.7) ;
+    display: block;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+}
+
+/*................................ signup section.............................. */
+
+.signupInner{
+    display:flex;
+    color: white;
+    flex-direction: column;
+}
+
+.signup{
+    display: block;
+    margin: auto;
+    max-width:calc(100% - 3rem);
+}
+
+.signup input{
+    width:377px;
+    height:56px;
+    background:rgba(22, 22, 22, 0.7);
+    margin-right: 8px;
+    border: 1px solid grey;
+    color: white;
+    border-radius: 4px;
+    padding: 24px 16px;
+    font-size: 1.2rem;
+}
+
+.signup ::-webkit-input-placeholder{
+    font-size:1rem;
+    color:lightgray;
+}
+
+
+.signup button{
+    width:201px;
+    height:56px;
+    background-color: #E50914;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.5rem;
+    align-self: baseline;
+    font-weight: 600;
+}
+
+.signup button:hover{
+    background-color: #d50027;
+}
+
+.signup h1{
+    font-size: 3rem;
+    font-weight: 900;
+    width: 100%;
+}
+
+.signup p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+.signup h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.signup img{
+    width:26px;
+    height: 26px;
+    vertical-align:middle;
+}
+
+.email_container{
+    margin:16px 137px 0px 137px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+/*........................... tv,phone,devices and kids page ............................*/
+
+.tv ,.phone, .devices, .kids{
+    display: block;
+    padding:72px 0;
+}
+
+.main_tv, .main_phone, .main_devices, .main_kids{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    max-width:calc(80% - 3rem);
+    margin:0 auto;
+}
+
+
+.tv_text, .phone_text, .devices_text{
+    color:white;
+    text-align: left;
+    max-width:35rem;
+}
+
+.tv_text h1, .phone_text h1 ,.devices_text h1, .kids_text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.tv_text p, .phone_text p, .devices_text p, .kids_text p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin:1rem  0 0 0;
+    display: block;
+    letter-spacing: normal;
+}
+
+.tv_image, .phone_image, .devices_image, .kids_image{
+    width:100%;
+    overflow: hidden;
+}
+
+.main_tv img, .main_phone img ,.main_devices img, .main_kids img{
+    width:100%;
+}
+
+.phone_text p{
+   max-width: 550px;
+}
+
+.kids_text{
+    color:white;
+    text-align: left;
+    max-width:40rem;
+}
+
+.kids_text p{
+    max-width:550px;
+} 
+
+.tv_image{
+    position: relative;
+}
+
+.tv_vedio{
+    position: absolute;
+    top:20.5%;
+    left:0%;
+    max-height:54%;
+    overflow:hidden ;
+    width: 100%;
+    height: 100%;
+}
+
+/* ...........................faq section................................. */
+
+.main_faq{
+    padding:72px 0;
+    display: block;
+}
+
+.faq{
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: calc(80% - 3rem);
+}
+
+.faq_component{
+    width:100%;
+    /* padding: 24px; */
+    background-color: rgb(45, 45, 45);
+    margin-bottom:8px;
+
+}
+
+.faq span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 24px;
+}
+
+.faq h1{
+    font-size:3rem;
+    font-weight: 900;
+}
+
+.faq h3{
+    margin:0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.faq p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+.faq img{
+    width:36px;
+    height: 36px;
+}
+
+.faq_content{
+  border-top:2px solid black;
+  padding: 1.5rem;
+}
+
+.faq_clicked{
+    animation:myAnim 1.5s ease forwards;
+}
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* .................................footer section................................... */
+
+.main_footer{
+    padding:60px 0;
+    display: block;
+}
+
+.footer{
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:0 auto;
+    max-width: calc(80% - 3rem);
+
+}
+
+.footer_points{
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr,5);
+    column-gap:1rem;
+    row-gap: 1.3rem;
+    padding: 12px 0;
+
+}
+
+.footer h3{
+    padding:12px 0;
+    font-size: 16px;
+}
+
+.footer_points a{
+    width:auto;
+}
+
+.footer a{
+    color: rgba(255,255,255,0.7);
+    
+}
+
+.language{
+    margin:12px 0;
+}
+
+
+/* ..........................................................media queries for home page........................................ */
+
+@media screen and (max-width: 1070px){
+
+
+.signup{
+    max-width: calc(80% - 3rem);
+}
+
+
+.signup ::-webkit-input-placeholder{
+    font-size:1rem;
+   
+}
+
+.signup h1{
+    font-size: 2rem;
+}
+
+.signup p{
+    font-size: 1.2rem;
+}
+
+.signup h3{
+    font-size: 1.2rem;
+
+}
+
+.signup input{
+    width:23.5rem;
+}
+
+.email_container{
+    margin:1rem 0;
+}
+
+
+}
+
+
+@media screen and (max-width: 960px){
+    
+
+.main_tv,.main_devices{
+    flex-direction: column;
+    max-width: calc(100% - 3rem);
+}
+
+.main_kids, .main_phone{
+    flex-direction: column-reverse;
+    max-width: calc(100% - 3rem);
+}
+
+.tv_text, .phone_text, .devices_text{
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+    
+}
+
+.tv_text h1, .phone_text h1 ,.devices_text h1, .kids_text h1{
+    font-size: 2rem;
+}
+
+.tv_text p, .phone_text p, .devices_text p, .kids_text p{
+    font-size: 1rem;
+}
+
+.main_tv img, .main_phone img ,.main_devices img, .main_kids img{
+    width:100%;
+}
+
+.phone_text p{
+   max-width: 100%;
+}
+
+.kids_text{
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.kids_text p{
+    max-width:100%;
+} 
+
+
+.footer_points{
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1fr,4);
+
+}
+
+.footer{
+    max-width: calc(100% - 3rem);
+
+}
+
+.faq{
+    max-width: calc(100% - 3rem);
+}
+
+.faq h1{
+    font-size:1.7rem;
+}
+
+.faq h3{
+    font-size: 18px;
+}
+
+
+.faq p{
+    font-size: 18px;
+}
+
+}
+
+
+@media screen and (max-width:795px){
+    .footer_points{
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: repeat(1fr,5);
+    
+    }
+
+
+}
+
+@media screen and (max-width:665px){
+    .email_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .signup button{
+        width:152px;
+        height:48px;
+        font-size: 18px;
+        align-self:center;
+        margin-top: 16px;
+    }
+
+    .email_container input{
+        width: 100%;
+    }
+    
+    .footer_points{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(1fr,8);
+    
+    }
+
+    .logo_img{
+        width:128px;
+        height:80px;
+        object-fit:cover;
+        margin-right:auto;
+        background: transparent;
+    }
+
+    .navbar{
+        width:100%;
+       padding:30px 30px;
+    }
+
+    .faq h1{
+        text-align: center;
+    }
+
+    .signup h1, .tv_text h1, .phone_text h1 ,.devices_text h1, .kids_text h1{
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    .select_container{
+        display: none;
+    }
+
+    .signup{
+        max-width:calc(100% - 2rem);
+    }
+
+
+}
+
+
+/*.................................................... Registration page............................................................ */
+
+
+.reg_form{
+    background-color: white;
+    overflow-x: hidden;
+  
+}
+
+/* .........................................registration navbar............................ */
+
+.reg_navbar{
+    width:100%;
+    max-height:90px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid lightgray;
+}
+
+.reg_navbar img{
+    width:186px;
+    margin: 0 0.5rem;
+}
+
+.reg_navbar a{
+    width:61px;
+    font-size: 19px;
+    align-self: center;
+    margin:0 2.3rem;
+    text-decoration: none;
+    color:#333;
+    font-weight: 700;
+    width: fit-content;
+   
+}
+
+.reg_navbar a:hover{
+    text-decoration: underline;
+}
+
+/* ............................registration signup............................... */
+
+.reg_signup{
+    display:block;
+    margin: auto;
+    padding:20px 32px 60px 32px;
+    max-width: fit-content;
+}
+
+.reg_signup_inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width:fit-content;
+    width:440px;
+    height:416px;
+}
+
+.reg_signup_inner h1{
+    font-size: 32px;
+    color:#333;
+}
+
+.reg_signup_inner input{
+    width: 100%;
+    padding:20px 16px;
+    margin:20px;
+    border-radius: 5px;
+    border-color: #E50914;
+}
+
+.reg_signup_inner input::placeholder{
+    font-size: 19px;
+}
+
+.reg_signup button{
+    width:100%;
+    padding:20px 16px;
+    font-size: 24px;
+    color: white;
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+}
+
+.reg_signup button:hover{
+    background-color: #f40511;
+}
+
+
+/*.......................................... registration page footer............................... */
+
+.reg_footer_main{
+    background-color: #f3f3f3;
+    margin-top: 95px;
+    padding-bottom: 20px;
+}
+
+.reg_footer{
+    max-width: calc(95% - 4rem);
+    margin: auto;
+    padding:30px 0 0 ;
+}
+
+
+.reg_footer_points{
+    display: grid;
+    grid-template-columns:1fr 1fr 2fr 1fr;
+    max-width: 80%;
+}
+
+.reg_footer h3{
+    color:#737373;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.reg_footer h3 a{
+    text-decoration: none;
+    color:#737373;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.reg_footer_points a{
+    text-decoration: none;
+    color:#737373;
+    margin-bottom: 30px;
+    font-size: 13px;
+    width: 100%;
+    padding-right: 16px;
+    font-weight: 400;
+}
+
+.reg_footer a:hover{
+    text-decoration: underline;
+}
+
+ 
+/*.....................................media queries for registration.............................. form */
+
+@media screen and (max-width:750px){
+    .reg_footer_points{
+        grid-template-columns:repeat(3,1fr);
+        max-width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:500px){
+    .reg_footer_points{
+        grid-template-columns:repeat(2,1fr);
+    }
+    
+}
+
+
+
+/* .........................................................signin page.................................................... */
+
+
+.signin{
+    background-image: url('images/sigin_page.jpg');
+    position: relative;
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.signin::before{
+    content:'';
+    background:rgba(22, 22, 22, 0.7);
+    display: block;
+    height: 100%;
+    position: absolute;
+    z-index:-1;
+    width: 100%;
+}
+
+
+/* .............................signin navbar............................... */
+
+.sigin_navbar{
+    width:100%;
+    max-height:90px;
+    
+}
+
+.signin_navbar img{
+    width:186px;
+    margin: 0 0.7rem;
+}
+
+
+/* .......................signin main page..................................... */
+
+
+.signin_main{
+    display:block;
+    margin: auto;
+    padding:0 58px;
+    max-width: fit-content;
+}
+
+.signin_inner{
+    display: flex;
+    flex-direction: column;
+    width:450px;
+    height:560px;
+    padding:60px 68px 40px;
+    background:#000000BF;
+}
+
+.signin_inner h1{
+    color:white;
+    font-size: 32px;
+    margin-bottom: 28px;
+
+}
+
+
+.signin_inner input{
+    
+    padding:20px 16px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    background-color: #333333;
+    border: none;
+    height: 50px;
+    color: white;
+}
+
+.signin_inner input::placeholder{
+    font-size: 16px;
+}
+
+.signin button{
+    width:100%;
+    height: 48px;
+    font-size: 16px;
+    color: white;
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+    margin:24px 0 12px;
+    padding: 16px;
+}
+
+.signin button:hover{
+    background-color: #f40511;
+}
+
+.signin p{
+    margin-top: 16px;
+    color:#737373;
+}
+
+.signin p a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.signin p a:hover{
+    text-decoration: underline;
+}
+
+
+.signin_footer_main{
+    background:#000000BF;
+    margin-top: 95px;
+    padding-bottom: 20px;
+}
+
+.signin_footer{
+    max-width: calc(80% - 4rem);
+    margin: auto;
+    padding:30px 0 0 ;
+}
+
+
+.signin_footer_points{
+    display: grid;
+    grid-template-columns:1fr 3fr 2fr 3fr;
+    max-width: 80%;
+}
+
+.signin_footer h3{
+    color:#737373;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.signin_footer h3 a{
+    text-decoration: none;
+    color:#737373;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.signin_footer_points a{
+    text-decoration: none;
+    color:#737373;
+    margin-bottom: 16px;
+    font-size: 13px;
+    width: 100%;
+    padding-right: 16px;
+    font-weight: 400;
+}
+
+.signin_footer a:hover{
+    text-decoration: underline;
+}
+
+
+/* ...........................media queries................................. */
+
+@media screen and (max-width:780px){
+    .signin{
+        background: none;
+    }
+    
+    .signin::before{
+      display: none;
+    }
+
+    .signin_main{
+        padding:0 2.2rem;
+        margin:0;
+        max-width:100vw;
+    }
+    
+    .signin_inner{
+        width:100%;
+        padding:0;
+        background:#000000BF;
+    }
+
+    .signin_footer_points{
+        grid-template-columns:1fr 1fr 1fr;
+        max-width:100%;
+    }
+
+    .signin_footer{
+        max-width: calc(100% - 4rem);
+        margin: auto;
+        padding:30px 0 0 ;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .signin_footer_points{
+        grid-template-columns:1fr 1fr ;
+    }
+}
+
+
+/* ..........................................................movies section.................................................... */
+
+.movies {
+    background-image: url("images/sigin_page.jpg");
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-position: center center;
+}
+
+.movies::before{
+    content:'';
+    background:rgba(22, 22, 22, 0.7);
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.movies h1{
+    color:white;
+    position: relative;
+    font-size: 3rem;
+    background:#000000BF;
+    padding:40px;
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+}
+
+.movies_button{
+    padding:20px 60px;
+    background-color:#E50914;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+
+}
