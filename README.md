@@ -41,4 +41,4 @@ Acknowledgments
 This project was inspired by the design and functionality of Netflix.
 
 Contact
-For any inquiries or questions, please contact met at shirazyousuf2017@gmail.com.
+For any inquiries or questions, please contact me at shirazyousuf2017@gmail.com.
