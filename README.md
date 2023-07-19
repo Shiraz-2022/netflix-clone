@@ -16,9 +16,9 @@ Features
 
 Screenshots
 
-![Uploading netflix3.png…]()
-![Uploading netflix2.png…]()
 ![netflix1](https://github.com/Shiraz-2022/netflix-clone/assets/113820860/e37e05e6-6236-4307-bf3b-803a5b4b5884)
+![netflix2](https://github.com/Shiraz-2022/netflix-clone/assets/113820860/6baa2bed-e542-4261-89b9-2da7b2512429)
+![netflix3](https://github.com/Shiraz-2022/netflix-clone/assets/113820860/ee2d650f-2c20-4ab5-975c-24a75041f5a2)
 
 
 Live Demo
